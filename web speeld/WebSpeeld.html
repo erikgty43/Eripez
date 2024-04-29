@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speeld Graphics</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Helvetica:400,700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="web.css" rel="stylesheet" type="text/css">
+    <link href="webjs.js" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+
+
+    <style>
+
+        .contact-box {
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .contact-box a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-box a:hover {
+            text-decoration: underline;
+        }
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Helvetica', Arial, sans-serif;
+        }
+
+        .header-color, #contacto {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        .fixed-top {
+            box-shadow: 0 2px 5px rgba(0,0,0,.3);
+        }
+
+    
+
+        #inicio {
+            background: url('https://i.ibb.co/z4xHLXD/2024-04-28-22-40-22-5503.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-shadow: 3px 3px 9px rgba(0,0,0,0.7);
+            
+        }
+
+        .dark-overlay {
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .service-item {
+            background-color: #3498db; /* Default blue */
+        }
+
+        .service-item:nth-child(odd) {
+            background-color: #2980b9;
+        }
+
+        .service-item:nth-child(even) {
+            background-color: #1abc9c;
+        }
+
+        .why-choose-item {
+            background-color: #82ccdd;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .subscription-form {
+            padding: 20px;
+            background-color: #eaf1f8;
+            border-radius: 5px;
+            color: black; /* Subscription text color */
+        }
+        
+        #loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1071;
+            transition: opacity 0.5s ease;
+        }
+
+        .spinner {
+            border: 6px solid rgba(0, 0, 0, 0.1);
+            border-left-color: #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s infinite linear;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        
+            
+    </style>
+</head>
+<body>
+    
+
+    <div id="loader">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="contact-button">
+        <a href="tel:+688798868" class="phone-icon">&#x260E;</a> <!-- Modificado para llamar directamente -->
+    </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/s12N7VW/22121.png" alt="Logo" style="height: 40px;">
+                
+            </a>
+            <!-- Toggler/Collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav" class="fadeIn">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Un-vistazo">Un vistazo</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#herramientas">Herramientas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#porque-elegirnos">¿Por qué elegirnos?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contactanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </nav>
+
+    <section id="inicio" class="container text-center my-5 py-5" class="fadeIn">
+        <h1>Bienvenidos a Speeld Graphics</h1>
+        <p>Somos una empresa dedicada al diseño gráfico, especializados en crear soluciones visuales que comunican efectivamente tu mensaje.</p>
+        <a href="#contacto" class="btn btn-primary">Contáctanos</a>
+       
+          
+          
+    </section>
+
+    <section id="servicios" class="container text-center my-5" class="fadeIn">
+        <h2>Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4 service-item box-shadow dark-overlay">
+                <h4>Logotipos</h4>
+                <p>Diseñamos identidades visuales que representan tu marca.</p>
+            </div>
+            <div class="col-md-4 service-item box-shadow dark-overlay">
+                <h4>Cartelería</h4>
+                <p>Creación de impactantes carteles para cualquier evento o promoción.</p>
+            </div>
+            <div class="col-md-4 service-item box-shadow dark-overlay">
+                <h4>Folletería</h4>
+                <p>Materiales impresos para difundir tu negocio o evento.</p>
+            </div>
+            <div class="col-md-4 service-item box-shadow dark-overlay">
+                <h4>Diseño Web</h4>
+                <p>Desarrollo y diseño de sitios web optimizados y atractivos.</p>
+            </div>
+            <div class="col-md-4 service-item box-shadow dark-overlay">
+                <h4>Diseño de Empaques</h4>
+                <p>Diseños innovadores que realzan la presentación de tus productos.</p>
+            </div>
+            <div class="col-md-4 service-item box-shadow dark-overlay">
+                <h4>Y Mucho mas</h4>
+                <p>Muchos mas productos aqui en Speeld</p>
+            </div>
+            <!-- Puedo seguir agregando más servicios -->
+        </div>
+
+        
+        
+    </section>
+    <section id="Un-vistazo" class="container my-5" class="fadeIn">
+
+        <div class="container mt-5" >
+            <h2 class="text-center mb-4">Ejemplos de Nuestros Productos</h2>
+            <div class="row">
+                <!-- Producto 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/42HKj8p/spoti.png" class="card-img-top" alt="Producto 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseños a tu gusto</h5>
+                            <p class="card-text">Hacemos todo tipo de diseños pero en lo primero que miramos es en tus gusto y en como te quiere su producto, siempre intentaremos que se aga realidad esas idesas creativas</p>
+                            <a href="#contacto" class="btn btn-primary">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="col-md-4" >
+                    <div class="card">
+                        <img src="https://i.ibb.co/f9Dfhff/3aeada.png" class="card-img-top" alt="Producto 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseños Modernos</h5>
+                            <p class="card-text">Intentamos crear los diseños mas modenos y frescos para llamar la antencion y destacra.</p>
+                            <a href="#contacto" class="btn btn-primary">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/LYK7ryX/weadad.png" class="card-img-top" alt="Producto 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Diseños para empresas..-</h5>
+                            <p class="card-text">Diseñamos anuncios , iconos de APP , pancartas cartas ,carteleria y muchas mas cosas que necesita tu negocio para destacar sobre los demas negocios.</p>
+                            <a href="#contacto" class="btn btn-primary">Contactanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Botón de Instagram -->
+        <div class="btn-container">
+            <a href="https://www.instagram.com/speeldgraphics/" target="_blank" class="instagram-btn">
+                <i class="fab fa-instagram"></i>
+                <span>Más en Instagram</span>
+            </a>
+        </div>
+        
+        
+    </section>
+    <section id="herramientas" class="container my-5">
+        <div class="info-box">
+            <h2>Herramientas que utilizamos</h2>
+            <p><strong>Programas de edición de imágenes y vectorizado...</strong> Trabajamos con Adobe Photoshop e Illustrator por su precisión, versatilidad y amplio soporte en la industria del diseño. Estamos siempre en la búsqueda de incorporar nuevas herramientas que mejoren nuestros servicios y resultados.</p>
+            <h3>Uso de la IA en la Creación de Imágenes de Ambientes</h3>
+            <p>Los modelos de IA como Generative Adversarial Networks (GANs) y Variational Autoencoders (VAEs) pueden crear imágenes de ambientes totalmente nuevos al aprender de un conjunto de datos de imágenes existentes. Estos modelos son capaces de generar detalles realistas y ambientaciones que pueden no existir en el mundo real.</p>
+            <h3>Uso de Tecnología 3D en la Creación de Ambientes con Blender</h3>
+            <p><strong>Creación de Escenarios:</strong> Blender permite a los artistas crear modelos 3D detallados de cualquier cosa, desde objetos cotidianos hasta paisajes complejos y arquitectura futurista.</p>
+        </div>
+        
+    </section>
+
+    <section id="Iagenes" class="container my-5">
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Tarjeta 1: Compromiso de Diseño -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/jytd9xm/2024-04-29-17-50-46-4679.png" class="card-img-top" alt="Diseño Personalizado">
+                        <div class="card-body">
+                            <h5 class="card-title">Compromiso con el Diseño</h5>
+                            <p class="card-text">Nos comprometemos a que todos los diseños sean exactamente lo que pediste, ajustándonos a tus necesidades y expectativas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 2: Soporte Técnico -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/MRxwpPM/2024-04-29-17-53-06-8303.png" class="card-img-top" alt="Soporte Técnico">
+                        <div class="card-body">
+                            <h5 class="card-title">Soporte Técnico</h5>
+                            <p class="card-text">Contamos con un servicio técnico siempre listo para ayudar y resolver cualquier problema o duda que tengas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta 3: Satisfacción Garantizada -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://i.ibb.co/BTccdZG/2024-04-29-17-56-30-1685.png" class="card-img-top" alt="Satisfacción Garantizada">
+                        <div class="card-body">
+                            <h5 class="card-title">Satisfacción Garantizada</h5>
+                            <p class="card-text">Garantizamos que no terminaremos el trabajo hasta que estés completamente satisfecho con el resultado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="porque-elegirnos" class="container my-5">
+        <h2 class="text-center mb-4">¿Por qué elegir a Speeld Graphics?</h2>
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <i class="fas fa-check-circle fa-3x"></i>
+                <h4>Calidad y profesionalismo</h4>
+                <p>Nuestro equipo está formado por expertos en diseño gráfico comprometidos con la calidad y la excelencia en cada proyecto.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-clock fa-3x"></i>
+                <h4>Respuesta rápida y adaptabilidad</h4>
+                <p>Entendemos la importancia del tiempo, por eso ofrecemos respuestas rápidas y nos adaptamos a las necesidades cambiantes de nuestros clientes.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-euro-sign fa-3x"></i>
+                <h4>Precios competitivos</h4>
+                <p>Ofrecemos servicios de alta calidad a precios competitivos para asegurar el mejor valor para nuestros clientes.</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-lightbulb fa-3x"></i>
+                <h4>Creatividad y atención al detalle</h4>
+                <p>Cada diseño es único, con un enfoque creativo que pone atención al más mínimo detalle para capturar la esencia de tu marca.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-white" id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Speeld Graphics</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#inicio" class="text-white">Inicio</a></li>
+                        <li><a href="#servicios" class="text-white">Servicios</a></li>
+                        <li><a href="#contacto" class="text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacta</h5>
+                    <p>Email: speeldgraphics@gmail.com</p>
+                    <p>Teléfono: 688798868</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <h5>Síguenos</h5>
+                    <a href="https://twitter.com/speeld49172" class="text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/speeldgraphics/" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center py-3">
+                <p>© 2023 Speeld Graphics. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                const loader = document.getElementById('loader');
+                loader.style.opacity = 0;
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                }, 500); // Ensures fade effect completes
+            }, 1000); // Display loader for at least 1 second for aesthetic reasons
+        };
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+        
+            // Función para actualizar el enlace activo en el navbar
+            function changeActiveNavLink() {
+                let currentSection = '';
+        
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+        
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.href.includes(currentSection)) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        
+            // Evento para cambiar el enlace activo al hacer clic
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.forEach(lnk => lnk.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
+        
+            // Evento para cambiar el enlace activo al hacer scroll
+            window.addEventListener('scroll', changeActiveNavLink);
+        });
+        </script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const elements = document.querySelectorAll('.fadeIn');
+        elements.forEach((element, index) => {
+            // Retrasa la animación basada en el orden del elemento
+            setTimeout(() => {
+                element.style.animationDelay = `${index * 0.2}s`; // Incrementa el delay para cada elemento
+                element.classList.add('animated');
+            }, 500); // Comienza a animar después de 500 ms de la carga de la página
+        });
+    });
+    </script>
+    
+</body>
+</html>

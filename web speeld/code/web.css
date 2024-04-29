@@ -1,0 +1,474 @@
+/* Estilos generales para elementos con sombra */
+.box-shadow {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave para un efecto sutil */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave al cambiar la sombra */
+}
+
+/* Cuando el usuario pasa el mouse sobre el elemento, la sombra se hace más prominente */
+.box-shadow:hover {
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Aplicar la clase box-shadow a todos los elementos relevantes */
+.service-item, .why-choose-item, .subscription-form {
+    background-color: #ffffff; /* Fondo blanco para contrastar con la sombra */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+/* Ajustes adicionales para la sección de servicios para mantener la consistencia visual */
+.service-item {
+    background-color: #3498db; /* Mantener el color azul original */
+    color: white; /* Texto blanco para contraste */
+}
+
+/* Ajustes para la sección '¿Por qué elegirnos?' */
+.why-choose-item {
+    background-color: #82ccdd; /* Color azul claro */
+    color: white; /* Texto blanco para contraste */
+}
+
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.phone-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-dropdown {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    width: 200px;
+}
+
+.contact-dropdown a {
+    display: block;
+    color: #007BFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.contact-dropdown a:hover {
+    background-color: #f0f0f0;
+}
+.contact-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.phone-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del ícono del teléfono */
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 24px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-dropdown {
+    background-color: rgb(5, 84, 255);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    width: 200px;
+    display: none; /* Asegurarse de que inicialmente está oculto */
+}
+
+.contact-dropdown a {
+    display: block;
+    color: black; /* Asegurando que el texto es negro */
+    text-decoration: none;
+    padding: 5px 10px;
+    text-align: left;
+    border-radius: 4px;
+}
+
+.contact-dropdown a:hover {
+    background-color: #006eff;
+}
+
+/* Estilos básicos del navbar */
+.nav-link {
+    transition: color 0.3s ease-in-out;
+}
+
+/* Clase para el enlace activo */
+.nav-link.active {
+    color: #007BFF; /* Cambia a tu color preferido */
+    font-weight: bold;
+}
+
+/* Estilo para animación al hacer clic */
+.nav-link:active {
+    transform: scale(0.95); /* Efecto de presión */
+}
+
+/* Estilos para el navbar */
+.navbar {
+    background-color: #007bff; /* Bootstrap primary blue */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Opcional: añade sombra para más profundidad */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: white; /* Asegura que el texto es blanco para contraste con el fondo azul */
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #cce5ff; /* Un azul más claro para el hover y focus */
+}
+
+.navbar .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Borde del toggler en caso de menú colapsable */
+}
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.contact-box {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: black; /* Asegura que el texto es negro */
+}
+
+.contact-box a {
+    color: black; /* Establece el color de los enlaces a negro */
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+/* Estilo global para todas las secciones */
+section {
+    margin-top: 40px; /* Añade espacio arriba de cada sección */
+    margin-bottom: 40px; /* Añade espacio debajo de cada sección */
+    padding: 20px; /* Añade espacio dentro de cada sección */
+    background: #fff; /* Opcional: establece un fondo blanco para destacar la sección */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: añade sombra para un efecto elevado */
+}
+
+/* Estilos específicos para secciones que necesitan más atención o diferente tratamiento */
+#porque-elegirnos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f8f8f8; /* Un ligero color de fondo diferente para destacar la sección */
+}
+.navbar-brand img {
+    height: 80px; /* Ajusta la altura según necesidades */
+    margin-right: 10px; /* Añade margen derecho si es necesario */
+    width: auto;  /* Mantiene la relación de aspecto del logo */
+}
+
+.fa-check {
+    color: rgb(255, 255, 255); /* Cambia el color del icono a verde */
+    font-size: 20px; /* Ajusta el tamaño del icono */
+}
+
+.footer {
+    background-color: #343a40; /* Un color de fondo oscuro para el footer */
+    padding: 20px 0;
+}
+
+.footer a.text-white {
+    color: #fff; /* Asegura que los enlaces son blancos */
+}
+
+.footer a.text-white:hover {
+    color: #ccc; /* Cambia el color al pasar el mouse para mejor interactividad */
+}
+
+.footer h5 {
+    color: #fff; /* Títulos en blanco */
+    margin-bottom: 20px; /* Espacio debajo de los títulos */
+}
+
+.footer p {
+    margin-bottom: 10px; /* Espacio debajo de los párrafos */
+}
+
+.card {
+    margin-top: 20px;  /*  Asegura que haya un espacio entre las tarjetas y otros elementos*/
+}
+
+.card-img-top {
+    width: 100%;  /*  Asegura que la imagen cubra el ancho de la tarjeta*/
+    height: 200px;  /* Establece una altura fija para las imágenes*/
+    object-fit: cover;  /* Asegura que la imagen cubra el espacio sin distorsionarse*/
+}
+
+/* Estilo base de las tarjetas */
+.card {
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la transición de la transformación y la sombra */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* Sombra inicial */
+}
+
+/* Estilo al pasar el ratón por encima */
+.card:hover {
+    transform: translateY(-5px); /* Mueve la tarjeta hacia arriba */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Sombra más prominente al pasar el ratón */
+}
+
+
+.info-box {
+    background-color: #f9f9f9; /* Color de fondo claro para la caja */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados para un look moderno */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Margen externo para separación */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera para profundidad */
+}
+
+.info-box h2, .info-box h3 {
+    color: #333; /* Color oscuro para los títulos */
+}
+
+.info-box p {
+    color: #666; /* Color más suave para el texto, mejora la legibilidad */
+    line-height: 1.6; /* Espaciado de línea para mejor legibilidad */
+}
+
+.carousel-item img {
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    object-fit: cover; /* Para asegurarse de que las imágenes cubran el espacio adecuadamente */
+}
+
+#inicio img {
+    width: 100%;   /* Hace que la imagen ocupe el 100% del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+}
+
+#inicio {
+    background-size: cover;
+    background-position: center;
+}
+
+.card {
+    margin-bottom: 20px; /* Asegura un margen entre las tarjetas */
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; /* Ajusta la altura de las imágenes según sea necesario */
+    object-fit: cover; /* Asegura que la imagen cubra el área designada sin distorsionar */
+}
+.footer {
+    background-color: #343a40; /* Un color de fondo más oscuro para mejor contraste */
+    padding: 20px 0;
+}
+
+.footer h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li a {
+    color: #d1d1d1;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer p {
+    color: #cccccc; /* Un color más claro para el texto, mejorando la legibilidad */
+}
+
+.social-icons a {
+    font-size: 24px; /* Aumenta el tamaño de los iconos de redes sociales */
+    margin: 0 10px; /* Espacio horizontal entre iconos */
+    color: #cccccc; /* Color inicial de los iconos */
+}
+
+.social-icons a:hover {
+    color: #ffffff; /* Color de los iconos al pasar el ratón */
+}
+
+.text-center {
+    border-top: 1px solid #555; /* Añade un borde para separar el contenido */
+    padding-top: 20px; /* Espaciado después del borde */
+}
+
+.collage {
+    position: relative;
+    width: 300px; /* Ajusta según el tamaño deseado del collage */
+    height: 300px;
+    overflow: hidden; /* Oculta cualquier parte de una imagen que se salga del contenedor */
+}
+
+.collage-img {
+    position: absolute;
+    width: 50%; /* Ajusta esto según cómo quieras que se vean las imágenes */
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Animación que define cómo aparecerán las imágenes */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* La imagen se vuelve completamente visible al final de la animación */
+    }
+}
+
+/* Posicionamiento específico para cada imagen */
+.collage-img:nth-child(1) { top: 0; left: 0; }
+.collage-img:nth-child(2) { top: 0; right: 0; }
+.collage-img:nth-child(3) { bottom: 0; left: 0; }
+.collage-img:nth-child(4) { bottom: 0; right: 0; }
+
+.instagram-btn {
+    background-color: #E1306C; /* Color oficial de Instagram */
+    color: white; /* Texto blanco para contraste */
+    font-family: Arial, sans-serif; /* Fuente genérica */
+    padding: 10px 20px; /* Relleno alrededor del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Eliminar subrayado de enlaces */
+    font-weight: bold; /* Texto en negrita */
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1); /* Sombra sutil para efecto 3D */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.instagram-btn:hover {
+    background-color: #C13584; /* Un tono más oscuro de rosa al pasar el mouse */
+}
+
+.btn-container {
+    text-align: center; /* Centra el contenido del contenedor */
+    margin-top: 20px; /* Añade margen superior si es necesario */
+}
+
+.instagram-btn {
+    background-color: #007BFF; /* Azul */
+    color: white; /* Color del texto e ícono */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.instagram-btn i {
+    color: white; /* Asegura que el ícono siempre sea blanco */
+    display: none; /* Ocultar el ícono inicialmente */
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+.instagram-btn:hover {
+    background-color: #0056b3; /* Un tono más oscuro de azul */
+    color: white; /* Asegura que el texto se mantenga blanco */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.instagram-btn:hover i {
+    display: inline-block; /* Mostrar el ícono al pasar el ratón */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Opcional: añadir un pequeño movimiento vertical */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    opacity: 0; /* Inicia invisible */
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; /* Mantiene el estado final después de completar la animación */
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin: 0;
+    }
+}
+@media (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin: 0;
+    }
+}
+header a img {
+    height: 50px; /* o cualquier tamaño que se ajuste a tu diseño */
+    width: auto; /* mantiene la proporción del logo */
+    transition: opacity 0.3s; /* una transición suave al cambiar el estado, opcional */
+}
+
+header a:hover img {
+    opacity: 0.8; /* efecto al pasar el ratón sobre el logo, opcional */
+}
+
+@media (max-width: 768px) {
+    header a img {
+        height: 30px; /* más pequeño en dispositivos móviles */
+    }
+}
